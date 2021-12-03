@@ -344,7 +344,7 @@ class ProfCoursTest extends TestCase
         * s’inspirer de test de la modification du prof avec idProf= 10 pour tester la modification du cours dans ayant comme idCours = 9.
         *
         */
-        $cours = new Cours($this->intitule, $this->duree, $this->$myprof);
+        $cours = new Cours($this->intitule, $this->duree, $this->myprof);
         $val = $cours->updateOne($conn, $idCours);
         $expected_cours_str = $cours->__toString();
         $record_cours = Cours::printOne($conn, $idCours);
