@@ -28,7 +28,7 @@ class ProfCoursTest extends TestCase
     // cours
     private $intitule="Intégratoin continue"; //a remplir
     private $duree="3h";    //a remplir
-    private $myprof=2
+    private $myprof=2 ;
 
     private static $prof_a = [];
     private static $cours_a = [];
