@@ -228,7 +228,7 @@ class ProfCoursTest extends TestCase
             print $record_cours;
         }
         print "################################################################\n\n";
-        $this->assertCount(count(Self::$coursf_a), $record_cours_a, "Nombre d'enregistrement égale pour Cours\n");
+        $this->assertCount(count(Self::$cours_a), $record_cours_a, "Nombre d'enregistrement égale pour Cours\n");
         
     }
     
@@ -343,7 +343,7 @@ class ProfCoursTest extends TestCase
         * s’inspirer de test de la modification du prof avec idProf= 10 pour tester la modification du cours dans ayant comme idCours = 9.
         *
         */
-        $cours = new Cours($this->intitule, $this->duree, $this->prof);
+        $cours = new Cours($this->intitule, $this->duree, $this->1);
         $val = $cours->updateOne($conn, $idCours);
         $expected_cours_str = $cours->__toString();
         $record_cours = Cours::printOne($conn, $idCours);
