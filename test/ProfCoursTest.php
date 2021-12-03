@@ -281,7 +281,7 @@ class ProfCoursTest extends TestCase
         *
         */
         $cours = Cours::printOne($conn);
-        $cours_str = $prof->__toString();
+        $cours_str = $cours->__toString();
         print "########## - 1e COURS EN BASE - ########## \n";
         print $cours_str."\n";
         print "################################################################\n\n";
